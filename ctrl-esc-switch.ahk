@@ -103,10 +103,9 @@
 *~RCtrl::
     Return
 
-; 左 Ctrl 空打ちで Escキーを入力
+; 左 Ctrl 空打ちで Escキー入力
 LCtrl up::
-    if (A_PriorHotkey == "*~LCtrl")
-    {
-      Send, {Esc}
-    }
-    Return
+  if (A_PriorHotkey == "*~LCtrl"){
+    Send {Esc}
+  }
+  Return
